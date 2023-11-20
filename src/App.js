@@ -162,7 +162,7 @@ export const App = () => {
         <></>
       )}
       <section className={styles.container}>
-        <h1 className={styles.heading}>Hex Flower Engine</h1>
+        <h1 className={styles.heading}>Hex Flower Engine for Weather Across Seasons</h1>
         {currentEngine?.id ? (
           <Grid
             engine={currentEngine}

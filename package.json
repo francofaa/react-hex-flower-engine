@@ -1,6 +1,6 @@
 {
   "name": "react-hex-flower-engine",
-  "version": "0.4.0",
+  "version": "v0.1 | Forked from DVDAGames's React Hex Flower Engine v0.4.0 | Hex Flower Engine by Goblin's Henchman",
   "private": true,
   "homepage": "http://elaborate-vacherin-c5ffb7.netlify.app",
   "dependencies": {

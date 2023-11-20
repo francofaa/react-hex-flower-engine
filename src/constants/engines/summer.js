@@ -1,8 +1,8 @@
 import { DEFAULT_DIRECTION_MAP as directions } from "./shared";
 
-const id = "00001";
+const id = "00003";
 
-const name = "Weather";
+const name = "Summer";
 
 const start = 1;
 
