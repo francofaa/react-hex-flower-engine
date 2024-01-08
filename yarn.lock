@@ -1394,10 +1394,10 @@
   resolved "https://registry.yarnpkg.com/@csstools/selector-specificity/-/selector-specificity-2.2.0.tgz#2cbcf822bf3764c9658c4d2e568bd0c0cb748016"
   integrity sha512-+OJ9konv95ClSTOJCmMZqpd5+YGsB2S+x6w3E1oaM8UuR5j8nTNHYSz8c9BEPGDOCMQYIEEGlVPj/VY64iTbGw==
 
-"@dvdagames/js-die-roller@2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@dvdagames/js-die-roller/-/js-die-roller-2.0.0.tgz#00e3da5faef52081b4e2d4f59bf4a57e35c51944"
-  integrity sha512-KhZSlHW6ZwjSiV4hd0JQqo3VT3/BQBwjiwZMihm1g+XFc4nSJod0ujJkhKyqZYI34Y6P8+ErNbra7MJPe0kwnA==
+"@dvdagames/js-die-roller@2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@dvdagames/js-die-roller/-/js-die-roller-2.0.1.tgz#04bfa35d639a600a74a448b50fc925afe98a4be2"
+  integrity sha512-2i76wZRieP3HcgL+MeYJllYuHEoi87SJ6z/ZopjQW7H1tHd1Eb4x7RsbSOJOzAbXnVp9aFsIhS40upH86hCsmw==
 
 "@emotion/is-prop-valid@^1.1.0":
   version "1.2.1"
