@@ -1,6 +1,6 @@
 {
   "name": "react-hex-flower-engine",
-  "version": "v0.2 | Forked from DVDAGames's React Hex Flower Engine v0.4.0 | Hex Flower Engine by Goblin's Henchman",
+  "version": "0.2 | Forked from DVDAGames's React Hex Flower Engine v0.4.0 | Hex Flower Engine by Goblin's Henchman",
   "private": true,
   "homepage": "http://hex-flower.netlify.app",
   "dependencies": {
