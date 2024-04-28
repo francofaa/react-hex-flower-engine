@@ -9,9 +9,10 @@ const start = 1;
 const version = "1.2.2";
 
 const nodes = [
+// TYPICAL MILD
   {
     id: 1,
-    label: "Sunny; pleasant",
+    label: "Clear, chilly",
     style: {
       backgroundColor: "#ddddde",
       icon: "day",
@@ -27,7 +28,7 @@ const nodes = [
   },
   {
     id: 2,
-    label: "Bright and breezy; light clouds",
+    label: "Partly cloudy, balmy",
     style: {
       backgroundColor: "#ddddde",
       icon: "day-cloudy-windy",
@@ -43,7 +44,7 @@ const nodes = [
   },
   {
     id: 3,
-    label: "Partly cloudy",
+    label: "Partly cloudy, chilly",
     style: {
       backgroundColor: "#ddddde",
       icon: "day-partly-cloudy",
@@ -59,7 +60,10 @@ const nodes = [
   },
   {
     id: 5,
-    label: "Partly sunny",
+    label: "Damp, drizzly",
+    modifiers: {
+      Wet: "Fires are harder to start."
+    },
     style: {
       backgroundColor: "#ddddde",
       icon: "day-cloudy",
@@ -75,7 +79,10 @@ const nodes = [
   },
   {
     id: 4,
-    label: "Cloudy and breezy; chance of light showers",
+    label: "Damp, drizzly",
+    modifiers: {
+      Wet: "Fires are harder to start."
+    },
     style: {
       backgroundColor: "#ddddde",
       icon: "cloudy-and-windy",
@@ -91,7 +98,7 @@ const nodes = [
   },
   {
     id: 7,
-    label: "Steady breezes; quite windy",
+    label: "Windy, gusting",
     style: {
       backgroundColor: "#ddddde",
       icon: "wind",
@@ -107,10 +114,13 @@ const nodes = [
   },
   {
     id: 6,
-    label: "Dark; overcast",
+    label: "Cloudy, misty",
     style: {
       backgroundColor: "#ddddde",
       icon: "day-cloudy-foggy",
+    },
+    modifiers: {
+      Vision: "Getting lost and surprised by encounters more likely",
     },
     map: {
       up: 11,
@@ -153,9 +163,10 @@ const nodes = [
       upLeft: 12,
     },
   },
+// LEFT LOBE NO WEATHER
   {
     id: 12,
-    label: "Relentless sun",
+    label: "Brooding clouds",
     style: {
       backgroundColor: "#eabcd5",
       icon: "day",
@@ -171,10 +182,14 @@ const nodes = [
   },
   {
     id: 9,
-    label: "Oppressive sun",
+    label: "Rolling fog",
     style: {
       backgroundColor: "#eabcd5",
       icon: "day",
+    },
+    modifiers: {
+      Slow: "Travel is slower.",
+      Vision: "Getting lost and surprised by encounters more likely",
     },
     map: {
       up: 14,
@@ -187,13 +202,14 @@ const nodes = [
   },
   {
     id: 14,
-    label: "Severe heat; chance of exhaustion",
-    modifiers: {
-      Exhaustion: "DC 5 CON Save",
-    },
+    label: "Rolling fog",
     style: {
       backgroundColor: "#eabcd5",
-      icon: "hot",
+      icon: "day",
+    },
+    modifiers: {
+      Slow: "Travel is slower.",
+      Vision: "Getting lost and surprised by encounters more likely",
     },
     map: {
       up: 4,
@@ -204,12 +220,15 @@ const nodes = [
       upLeft: 6,
     },
   },
+// RIGHT LOBE HAS WEATHER
   {
     id: 13,
-    label: "Heavy constant rain; reduced visibility",
+    label: "Heavy constant rain; reduced visibility.",
     modifiers: {
-      Stealth: "+1",
-      Perception: "-1",
+      Exhaustion: "STR save to avoid fatigue",
+      Vision: "Getting lost and surprised by encounters more likely",
+      Slow: "Travel is slower."
+      Wet: "Fires are harder to start."
     },
     style: {
       backgroundColor: "#77bc77",
@@ -226,7 +245,10 @@ const nodes = [
   },
   {
     id: 11,
-    label: "Lightning and sunshine; roll for rainbow",
+    label: "Icy, gentle snow",
+    modifiers: {
+      Wet: "Fires are harder to start.",    
+    },
     style: {
       backgroundColor: "#77bc77",
       icon: "day-thunderstorms",
@@ -242,7 +264,12 @@ const nodes = [
   },
   {
     id: 16,
-    label: "Dark thunder storms; low visibility",
+    label: "Whipping rains, thunderstorms",
+    modifiers: {
+      Slow: "Travel is slower.",
+      Vision: "Getting lost and surprised by encounters more likely",
+      Wet: "Fires are harder to start.",
+    },
     style: {
       backgroundColor: "#77bc77",
       icon: "thunderstorms",
@@ -256,10 +283,16 @@ const nodes = [
       upLeft: 18,
     },
   },
+// TOP COLLAR SEVERE WEATHER
   {
     id: 15,
     label:
-      "Severe lightning; high winds; exposure to the elements is dangerous",
+      "Torrential storm",
+    modifiers: {
+      Vision: "Getting lost and surprised by encounters more likely",
+      Wet: "Fires are harder to start.",
+      Hazard: "Travel is dangerous.",
+    },
     style: {
       backgroundColor: "#ffcf77",
       icon: "thundershowers",
@@ -276,7 +309,12 @@ const nodes = [
   {
     id: 17,
     label:
-      "Severe lightning; high winds; exposure to the elements is dangerous",
+      "Torrential storm",
+    modifiers: {
+      Vision: "Getting lost and surprised by encounters more likely",
+      Wet: "Fires are harder to start.",
+      Hazard: "Travel is dangerous.",
+    },
     style: {
       backgroundColor: "#ffcf77",
       icon: "thundershowers",
@@ -293,7 +331,12 @@ const nodes = [
   {
     id: 18,
     label:
-      "Severe lightning; high winds; exposure to the elements is dangerous",
+      "Torrential storm",
+    modifiers: {
+      Vision: "Getting lost and surprised by encounters more likely",
+      Wet: "Fires are harder to start.",
+      Hazard: "Travel is dangerous.",
+    },
     style: {
       backgroundColor: "#ffcf77",
       icon: "thundershowers",
@@ -309,10 +352,12 @@ const nodes = [
   },
   {
     id: 19,
-    label: "Disaster! Zero visibility",
+    label:
+      "Tornado!",
     modifiers: {
-      Exhaustion: "DC 10 CON Save",
-      Vision: "Heavily Obscured",
+      Vision: "Getting lost and surprised by encounters more likely",
+      Wet: "Fires are harder to start.",
+      Hazard: "Travel is dangerous.",
     },
     style: {
       backgroundColor: "#ff7777",

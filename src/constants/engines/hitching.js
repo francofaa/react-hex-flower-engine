@@ -1,8 +1,8 @@
 import { DEFAULT_DIRECTION_MAP as directions } from "./shared";
 
-const id = "00001";
+const id = "00006";
 
-const name = "Winter";
+const name = "Hitching";
 
 const start = 1;
 
@@ -12,7 +12,10 @@ const nodes = [
 // TYPICAL MILD
   {
     id: 1,
-    label: "Clear, cold",
+    label: "Thick, hot fog",
+    modifiers: {
+      Vision: "Getting lost and surprised by encounters more likely",
+    },
     style: {
       backgroundColor: "#ddddde",
       icon: "day",
@@ -28,7 +31,10 @@ const nodes = [
   },
   {
     id: 2,
-    label: "Frigid, icy",
+    label: "Thick, hot fog",
+    modifiers: {
+      Vision: "Getting lost and surprised by encounters more likely",
+    },
     style: {
       backgroundColor: "#ddddde",
       icon: "day-cloudy-windy",
@@ -44,7 +50,11 @@ const nodes = [
   },
   {
     id: 3,
-    label: "Partly cloudy, cold",
+    label: "Misty, seeping damp",
+    modifiers: {
+      Vision: "Getting lost and surprised by encounters more likely",
+      Wet: "Fires are harder to start.",
+    },
     style: {
       backgroundColor: "#ddddde",
       icon: "day-partly-cloudy",
@@ -60,10 +70,10 @@ const nodes = [
   },
   {
     id: 5,
-    label: "Freezing rain",
+    label: "Misty, seeping damp",
     modifiers: {
-      Wet: "Fires are harder to start."
-      Exhaustion: "STR save to avoid taking fatigue",
+      Vision: "Getting lost and surprised by encounters more likely",
+      Wet: "Fires are harder to start.",
     },
     style: {
       backgroundColor: "#ddddde",
@@ -80,10 +90,10 @@ const nodes = [
   },
   {
     id: 4,
-    label: "Cold wind, freezing rain",
+    label: "Misty, seeping damp",
     modifiers: {
-      Wet: "Fires are harder to start."
-      Exhaustion: "STR save to avoid taking fatigue",
+      Vision: "Getting lost and surprised by encounters more likely",
+      Wet: "Fires are harder to start.",
     },
     style: {
       backgroundColor: "#ddddde",
@@ -100,10 +110,9 @@ const nodes = [
   },
   {
     id: 7,
-    label: "Bitter cold, silent",
-    style: {
-      backgroundColor: "#ddddde",
-      icon: "wind",
+    label: "Balmy mist",
+    modifiers: {
+      Vision: "Getting lost and surprised by encounters more likely",
     },
     map: {
       up: 12,
@@ -116,10 +125,10 @@ const nodes = [
   },
   {
     id: 6,
-    label: "Frigid mist",
-    style: {
-      backgroundColor: "#ddddde",
-      icon: "day-cloudy-foggy",
+    label: "Misty, seeping damp",
+    modifiers: {
+      Vision: "Getting lost and surprised by encounters more likely",
+      Wet: "Fires are harder to start.",
     },
     modifiers: {
       Vision: "Getting lost and surprised by encounters more likely",
@@ -135,7 +144,11 @@ const nodes = [
   },
   {
     id: 8,
-    label: "Heavy clouds",
+    label: "Misty, seeping damp",
+    modifiers: {
+      Vision: "Getting lost and surprised by encounters more likely",
+      Wet: "Fires are harder to start.",
+    },
     style: {
       backgroundColor: "#ddddde",
       icon: "cloudy",
@@ -168,14 +181,14 @@ const nodes = [
 // LEFT LOBE NO WEATHER
   {
     id: 12,
-    label: "Whipping freezing winds",
+    label: "Hazy fog, dripping",
     style: {
       backgroundColor: "#eabcd5",
       icon: "day",
     },
     modifiers {
-      Exhaustion: "STR save to avoid fatigue",
-      Slow: "Travel is slower.",
+      Vision: "Getting lost and surprised by encounters more likely",
+      Wet: "Fires are harder to start.",
     },
     map: {
       up: 17,
@@ -188,10 +201,7 @@ const nodes = [
   },
   {
     id: 9,
-    label: "Deep freeze, hoarfrost",
-    modifiers: {
-      Exhaustion: "STR save to avoid fatigue",
-    },
+    label: "Gloomy, shadows drip",
     style: {
       backgroundColor: "#eabcd5",
       icon: "day",
@@ -207,9 +217,9 @@ const nodes = [
   },
   {
     id: 14,
-    label: "Frigid mist",
+    label: "Sticky dew drips",
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
+      Wet: "Fires are harder to start.",
     },
     style: {
       backgroundColor: "#eabcd5",
@@ -227,10 +237,8 @@ const nodes = [
 // RIGHT LOBE HAS WEATHER
   {
     id: 13,
-    label: "Steady snow; reduced visibility.",
+    label: "Interminable drizzle.",
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
-      Slow: "Travel is slower."
       Wet: "Fires are harder to start."
     },
     style: {
@@ -248,12 +256,10 @@ const nodes = [
   },
   {
     id: 11,
-    label: "Icy snow; reduced visibility; frozen ground.",
+    label: "Befuddling green fog",
     modifiers: {
       Vision: "Getting lost and surprised by encounters more likely",
-      Slow: "Travel is slower."
-      Wet: "Fires are harder to start."
-      Hazard: "Travel is dangerous.",
+      Confusion: "CTRL save to avoid getting lost",
     },
     style: {
       backgroundColor: "#77bc77",
@@ -270,12 +276,10 @@ const nodes = [
   },
   {
     id: 16,
-    label: "Steady snow",
+    label: "Befuddling green fog",
     modifiers: {
       Vision: "Getting lost and surprised by encounters more likely",
-      Slow: "Travel is slower."
-      Wet: "Fires are harder to start."
-      Hazard: "Travel is dangerous.",
+      Confusion: "CTRL save to avoid getting lost",
     },
     style: {
       backgroundColor: "#77bc77",
@@ -293,14 +297,10 @@ const nodes = [
 // TOP COLLAR SEVERE WEATHER
   {
     id: 15,
-    label:
-      "Snowstorm",
+    label: "Torrential rain.",
     modifiers: {
       Vision: "Getting lost and surprised by encounters more likely",
-      Slow: "Travel is slower."
       Wet: "Fires are harder to start."
-      Hazard: "Travel is dangerous.",
-      Exhaustion: "STR save to avoid fatigue",
     },
     style: {
       backgroundColor: "#ffcf77",
@@ -317,14 +317,10 @@ const nodes = [
   },
   {
     id: 17,
-    label:
-      "Snowstorm",
+    label: "Torrential rain.",
     modifiers: {
       Vision: "Getting lost and surprised by encounters more likely",
-      Slow: "Travel is slower."
       Wet: "Fires are harder to start."
-      Hazard: "Travel is dangerous.",
-      Exhaustion: "STR save to avoid fatigue",
     },
     style: {
       backgroundColor: "#ffcf77",
@@ -341,14 +337,10 @@ const nodes = [
   },
   {
     id: 18,
-    label:
-      "Snowstorm",
+    label: "Torrential rain.",
     modifiers: {
       Vision: "Getting lost and surprised by encounters more likely",
-      Slow: "Travel is slower."
       Wet: "Fires are harder to start."
-      Hazard: "Travel is dangerous.",
-      Exhaustion: "STR save to avoid fatigue",
     },
     style: {
       backgroundColor: "#ffcf77",
@@ -365,14 +357,10 @@ const nodes = [
   },
   {
     id: 19,
-    label:
-      "Blizzard",
+    label: "Sleepy, purple mist.",
     modifiers: {
       Vision: "Getting lost and surprised by encounters more likely",
-      Slow: "Travel is slower."
-      Wet: "Fires are harder to start."
-      Hazard: "Travel is dangerous.",
-      Exhaustion: "STR save to avoid fatigue",
+      Sleep: "CTRL save to avoid magical sleep",
     },
     style: {
       backgroundColor: "#ff7777",

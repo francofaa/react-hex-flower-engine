@@ -9,9 +9,10 @@ const start = 1;
 const version = "1.2.2";
 
 const nodes = [
+// TYPICAL MILD
   {
     id: 1,
-    label: "Sunny; pleasant",
+    label: "Hot, humid",
     style: {
       backgroundColor: "#ddddde",
       icon: "day",
@@ -27,7 +28,7 @@ const nodes = [
   },
   {
     id: 2,
-    label: "Bright and breezy; light clouds",
+    label: "Balmy, clear",
     style: {
       backgroundColor: "#ddddde",
       icon: "day-cloudy-windy",
@@ -43,7 +44,7 @@ const nodes = [
   },
   {
     id: 3,
-    label: "Partly cloudy",
+    label: "Overcast, muggy",
     style: {
       backgroundColor: "#ddddde",
       icon: "day-partly-cloudy",
@@ -59,7 +60,7 @@ const nodes = [
   },
   {
     id: 5,
-    label: "Partly sunny",
+    label: "Hot, humid",
     style: {
       backgroundColor: "#ddddde",
       icon: "day-cloudy",
@@ -75,7 +76,7 @@ const nodes = [
   },
   {
     id: 4,
-    label: "Cloudy and breezy; chance of light showers",
+    label: "Warm, clear",
     style: {
       backgroundColor: "#ddddde",
       icon: "cloudy-and-windy",
@@ -91,7 +92,7 @@ const nodes = [
   },
   {
     id: 7,
-    label: "Steady breezes; quite windy",
+    label: "Overcast, muggy",
     style: {
       backgroundColor: "#ddddde",
       icon: "wind",
@@ -107,7 +108,7 @@ const nodes = [
   },
   {
     id: 6,
-    label: "Dark; overcast",
+    label: "Brooding thunder",
     style: {
       backgroundColor: "#ddddde",
       icon: "day-cloudy-foggy",
@@ -153,12 +154,16 @@ const nodes = [
       upLeft: 12,
     },
   },
+// LEFT LOBE NO WEATHER
   {
     id: 12,
-    label: "Relentless sun",
+    label: "Relentless heat, still",
     style: {
       backgroundColor: "#eabcd5",
       icon: "day",
+    },
+    modifiers: {
+      Armor: "Resting in heavy armor leaves you deprived.",
     },
     map: {
       up: 17,
@@ -171,10 +176,13 @@ const nodes = [
   },
   {
     id: 9,
-    label: "Oppressive sun",
+    label: "Hot, occasional breezes",
     style: {
       backgroundColor: "#eabcd5",
       icon: "day",
+    },
+    modifiers: {
+      Armor: "Resting in heavy armor leaves you deprived.",
     },
     map: {
       up: 14,
@@ -187,13 +195,10 @@ const nodes = [
   },
   {
     id: 14,
-    label: "Severe heat; chance of exhaustion",
-    modifiers: {
-      Exhaustion: "DC 5 CON Save",
-    },
+    label: "Warm wind",
     style: {
       backgroundColor: "#eabcd5",
-      icon: "hot",
+      icon: "day",
     },
     map: {
       up: 4,
@@ -204,12 +209,13 @@ const nodes = [
       upLeft: 6,
     },
   },
+// RIGHT LOBE HAS WEATHER
   {
     id: 13,
-    label: "Heavy constant rain; reduced visibility",
+    label: "Low cloud, mist.",
     modifiers: {
-      Stealth: "+1",
-      Perception: "-1",
+      Vision: "Getting lost and surprised by encounters more likely",
+      Wet: "Fires are harder to start."
     },
     style: {
       backgroundColor: "#77bc77",
@@ -226,7 +232,10 @@ const nodes = [
   },
   {
     id: 11,
-    label: "Lightning and sunshine; roll for rainbow",
+    label: "Warm, gentle rain",
+    modifiers: {
+      Wet: "Fires are harder to start.",    
+    },
     style: {
       backgroundColor: "#77bc77",
       icon: "day-thunderstorms",
@@ -242,10 +251,15 @@ const nodes = [
   },
   {
     id: 16,
-    label: "Dark thunder storms; low visibility",
+    label: "Thunderstorm",
     style: {
       backgroundColor: "#77bc77",
       icon: "thunderstorms",
+    },
+    modifiers: {
+      Vision: "Getting lost and surprised by encounters more likely",
+      Wet: "Fires are harder to start.",
+      Hazard: "Travel is dangerous.",
     },
     map: {
       up: 6,
@@ -256,13 +270,17 @@ const nodes = [
       upLeft: 18,
     },
   },
+// TOP COLLAR SEVERE WEATHER
   {
     id: 15,
-    label:
-      "Severe lightning; high winds; exposure to the elements is dangerous",
+    label: "Sweltering, still",
     style: {
-      backgroundColor: "#ffcf77",
-      icon: "thundershowers",
+      backgroundColor: "#eabcd5",
+      icon: "day",
+    },
+    modifiers: {
+      Armor: "Resting in heavy armor leaves you deprived.",
+      Exhaustion: "STR save to avoid fatigue",
     },
     map: {
       up: 19,
@@ -275,11 +293,14 @@ const nodes = [
   },
   {
     id: 17,
-    label:
-      "Severe lightning; high winds; exposure to the elements is dangerous",
+    label: "Baking, dry",
     style: {
-      backgroundColor: "#ffcf77",
-      icon: "thundershowers",
+      backgroundColor: "#eabcd5",
+      icon: "day",
+    },
+    modifiers: {
+      Armor: "Resting in heavy armor leaves you deprived.",
+      Exhaustion: "STR save to avoid fatigue",
     },
     map: {
       up: 2,
@@ -292,11 +313,14 @@ const nodes = [
   },
   {
     id: 18,
-    label:
-      "Severe lightning; high winds; exposure to the elements is dangerous",
+    label: "Baking, dry",
     style: {
-      backgroundColor: "#ffcf77",
-      icon: "thundershowers",
+      backgroundColor: "#eabcd5",
+      icon: "day",
+    },
+    modifiers: {
+      Armor: "Resting in heavy armor leaves you deprived.",
+      Exhaustion: "STR save to avoid fatigue",
     },
     map: {
       up: 3,
@@ -309,10 +333,13 @@ const nodes = [
   },
   {
     id: 19,
-    label: "Disaster! Zero visibility",
+    label:
+      "Forest fire, smoke",
     modifiers: {
-      Exhaustion: "DC 10 CON Save",
-      Vision: "Heavily Obscured",
+      Vision: "Getting lost and surprised by encounters more likely",
+      Hazard: "Travel is dangerous.",
+      Armor: "Resting in heavy armor leaves you deprived.",
+      Exhaustion: "STR save to avoid fatigue",
     },
     style: {
       backgroundColor: "#ff7777",
