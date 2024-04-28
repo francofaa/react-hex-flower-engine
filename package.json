@@ -2,7 +2,7 @@
   "name": "react-hex-flower-engine",
   "version": "v0.1 | Forked from DVDAGames's React Hex Flower Engine v0.4.0 | Hex Flower Engine by Goblin's Henchman",
   "private": true,
-  "homepage": "http://elaborate-vacherin-c5ffb7.netlify.app",
+  "homepage": "http://hex-flower.netlify.app",
   "dependencies": {
     "@dvdagames/js-die-roller": "0.3.0",
     "@testing-library/jest-dom": "^4.2.4",
@@ -14,10 +14,11 @@
     "sanitize.css": "^11.0.1",
     "semver": "^7.3.2",
     "styled-components": "^5.1.1",
-    "yarn": "^1.22.21"
+    // "yarn": "^1.22.21"
   },
   "scripts": {
-    "build": "NODE_OPTIONS='--openssl-legacy-provider' react-scripts build",
+    //"build": "NODE_OPTIONS='--openssl-legacy-provider' react-scripts build",
+    "build": "react-scripts build",
     "deploy": "gh-pages -d build",
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
