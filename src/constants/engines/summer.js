@@ -215,7 +215,7 @@ const nodes = [
     label: "Low cloud, mist.",
     modifiers: {
       Vision: "Getting lost and surprised by encounters more likely",
-      Wet: "Fires are harder to start."
+      Wet: "Fires are harder to start.",
     },
     style: {
       backgroundColor: "#77bc77",

@@ -62,7 +62,7 @@ const nodes = [
     id: 5,
     label: "Freezing rain",
     modifiers: {
-      Wet: "Fires are harder to start."
+      Wet: "Fires are harder to start.",
       Exhaustion: "STR save to avoid taking fatigue",
     },
     style: {
@@ -82,7 +82,7 @@ const nodes = [
     id: 4,
     label: "Cold wind, freezing rain",
     modifiers: {
-      Wet: "Fires are harder to start."
+      Wet: "Fires are harder to start.",
       Exhaustion: "STR save to avoid taking fatigue",
     },
     style: {
@@ -230,8 +230,8 @@ const nodes = [
     label: "Steady snow; reduced visibility.",
     modifiers: {
       Vision: "Getting lost and surprised by encounters more likely",
-      Slow: "Travel is slower."
-      Wet: "Fires are harder to start."
+      Slow: "Travel is slower.",
+      Wet: "Fires are harder to start.",
     },
     style: {
       backgroundColor: "#77bc77",
@@ -251,8 +251,8 @@ const nodes = [
     label: "Icy snow; reduced visibility; frozen ground.",
     modifiers: {
       Vision: "Getting lost and surprised by encounters more likely",
-      Slow: "Travel is slower."
-      Wet: "Fires are harder to start."
+      Slow: "Travel is slower.",
+      Wet: "Fires are harder to start.",
       Hazard: "Travel is dangerous.",
     },
     style: {
@@ -273,8 +273,8 @@ const nodes = [
     label: "Steady snow",
     modifiers: {
       Vision: "Getting lost and surprised by encounters more likely",
-      Slow: "Travel is slower."
-      Wet: "Fires are harder to start."
+      Slow: "Travel is slower.",
+      Wet: "Fires are harder to start.",
       Hazard: "Travel is dangerous.",
     },
     style: {
@@ -297,8 +297,8 @@ const nodes = [
       "Snowstorm",
     modifiers: {
       Vision: "Getting lost and surprised by encounters more likely",
-      Slow: "Travel is slower."
-      Wet: "Fires are harder to start."
+      Slow: "Travel is slower.",
+      Wet: "Fires are harder to start.",
       Hazard: "Travel is dangerous.",
       Exhaustion: "STR save to avoid fatigue",
     },
@@ -321,8 +321,8 @@ const nodes = [
       "Snowstorm",
     modifiers: {
       Vision: "Getting lost and surprised by encounters more likely",
-      Slow: "Travel is slower."
-      Wet: "Fires are harder to start."
+      Slow: "Travel is slower.",
+      Wet: "Fires are harder to start.",
       Hazard: "Travel is dangerous.",
       Exhaustion: "STR save to avoid fatigue",
     },
@@ -345,8 +345,8 @@ const nodes = [
       "Snowstorm",
     modifiers: {
       Vision: "Getting lost and surprised by encounters more likely",
-      Slow: "Travel is slower."
-      Wet: "Fires are harder to start."
+      Slow: "Travel is slower.",
+      Wet: "Fires are harder to start.",
       Hazard: "Travel is dangerous.",
       Exhaustion: "STR save to avoid fatigue",
     },
@@ -369,8 +369,8 @@ const nodes = [
       "Blizzard",
     modifiers: {
       Vision: "Getting lost and surprised by encounters more likely",
-      Slow: "Travel is slower."
-      Wet: "Fires are harder to start."
+      Slow: "Travel is slower.",
+      Wet: "Fires are harder to start.",
       Hazard: "Travel is dangerous.",
       Exhaustion: "STR save to avoid fatigue",
     },

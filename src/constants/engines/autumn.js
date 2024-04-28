@@ -62,7 +62,7 @@ const nodes = [
     id: 5,
     label: "Damp, drizzly",
     modifiers: {
-      Wet: "Fires are harder to start."
+      Wet: "Fires are harder to start.",
     },
     style: {
       backgroundColor: "#ddddde",
@@ -81,7 +81,7 @@ const nodes = [
     id: 4,
     label: "Damp, drizzly",
     modifiers: {
-      Wet: "Fires are harder to start."
+      Wet: "Fires are harder to start.",
     },
     style: {
       backgroundColor: "#ddddde",
@@ -227,8 +227,8 @@ const nodes = [
     modifiers: {
       Exhaustion: "STR save to avoid fatigue",
       Vision: "Getting lost and surprised by encounters more likely",
-      Slow: "Travel is slower."
-      Wet: "Fires are harder to start."
+      Slow: "Travel is slower.",
+      Wet: "Fires are harder to start.",
     },
     style: {
       backgroundColor: "#77bc77",

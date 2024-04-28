@@ -239,7 +239,7 @@ const nodes = [
     id: 13,
     label: "Interminable drizzle.",
     modifiers: {
-      Wet: "Fires are harder to start."
+      Wet: "Fires are harder to start.",
     },
     style: {
       backgroundColor: "#77bc77",
@@ -300,7 +300,7 @@ const nodes = [
     label: "Torrential rain.",
     modifiers: {
       Vision: "Getting lost and surprised by encounters more likely",
-      Wet: "Fires are harder to start."
+      Wet: "Fires are harder to start.",
     },
     style: {
       backgroundColor: "#ffcf77",
@@ -320,7 +320,7 @@ const nodes = [
     label: "Torrential rain.",
     modifiers: {
       Vision: "Getting lost and surprised by encounters more likely",
-      Wet: "Fires are harder to start."
+      Wet: "Fires are harder to start.",
     },
     style: {
       backgroundColor: "#ffcf77",
@@ -340,7 +340,7 @@ const nodes = [
     label: "Torrential rain.",
     modifiers: {
       Vision: "Getting lost and surprised by encounters more likely",
-      Wet: "Fires are harder to start."
+      Wet: "Fires are harder to start.",
     },
     style: {
       backgroundColor: "#ffcf77",

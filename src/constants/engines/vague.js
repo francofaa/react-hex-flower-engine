@@ -238,8 +238,8 @@ const nodes = [
     label: "Steady snow; icy mist.",
     modifiers: {
       Vision: "Getting lost and surprised by encounters more likely",
-      Slow: "Travel is slower."
-      Wet: "Fires are harder to start."
+      Slow: "Travel is slower.",
+      Wet: "Fires are harder to start.",
     },
     style: {
       backgroundColor: "#77bc77",
@@ -259,7 +259,7 @@ const nodes = [
     label: "Hoarfrost, freezing fog.",
     modifiers: {
       Vision: "Getting lost and surprised by encounters more likely",
-      Slow: "Travel is slower."
+      Slow: "Travel is slower.",
       Hazard: "Travel is dangerous.",
     },
     style: {
@@ -301,8 +301,8 @@ const nodes = [
       "Blizzard, dense fog",
     modifiers: {
       Vision: "Getting lost and surprised by encounters more likely",
-      Slow: "Travel is slower."
-      Wet: "Fires are harder to start."
+      Slow: "Travel is slower.",
+      Wet: "Fires are harder to start.",
       Hazard: "Travel is dangerous.",
       Exhaustion: "STR save to avoid fatigue",
     },
@@ -325,8 +325,8 @@ const nodes = [
       "Blizzard, dense violet fog",
     modifiers: {
       Vision: "Getting lost and surprised by encounters more likely",
-      Slow: "Travel is slower."
-      Wet: "Fires are harder to start."
+      Slow: "Travel is slower.",
+      Wet: "Fires are harder to start.",
       Hazard: "Travel is dangerous.",
       Exhaustion: "STR save to avoid fatigue",
     },
@@ -349,8 +349,8 @@ const nodes = [
       "Blizzard, dense violet fog",
     modifiers: {
       Vision: "Getting lost and surprised by encounters more likely",
-      Slow: "Travel is slower."
-      Wet: "Fires are harder to start."
+      Slow: "Travel is slower.",
+      Wet: "Fires are harder to start.",
       Hazard: "Travel is dangerous.",
       Exhaustion: "STR save to avoid fatigue",
     },
@@ -373,8 +373,8 @@ const nodes = [
       "Blizzard, earth tremors",
     modifiers: {
       Vision: "Getting lost and surprised by encounters more likely",
-      Slow: "Travel is slower."
-      Wet: "Fires are harder to start."
+      Slow: "Travel is slower.",
+      Wet: "Fires are harder to start.",
       Hazard: "Travel is dangerous.",
       Exhaustion: "STR save to avoid fatigue",
     },
