@@ -17,7 +17,6 @@
     "yarn": "^1.22.21"
   },
   "scripts": {
-    "preinstall": "node ./scripts/netlify-preinstall.js",
     "build": "NODE_OPTIONS='--openssl-legacy-provider' react-scripts build",
     "deploy": "gh-pages -d build",
     "eject": "react-scripts eject",
