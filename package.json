@@ -1,6 +1,6 @@
 {
   "name": "react-hex-flower-engine",
-  "version": "v0.1 | Forked from DVDAGames's React Hex Flower Engine v0.4.0 | Hex Flower Engine by Goblin's Henchman",
+  "version": "v0.2 | Forked from DVDAGames's React Hex Flower Engine v0.4.0 | Hex Flower Engine by Goblin's Henchman",
   "private": true,
   "homepage": "http://hex-flower.netlify.app",
   "dependencies": {
@@ -17,13 +17,11 @@
     "yarn": "^1.22.21"
   },
   "scripts": {
-    "build": "NODE_OPTIONS='--openssl-legacy-provider' react-scripts build",
-    // "build": "react-scripts build",
+    "build": "react-scripts build",
     "deploy": "gh-pages -d build",
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
-    // "start": "react-scripts start",
-    "start": "./node_modules/.bin/netlify-lambda serve src",
+    "start": "react scripts start",
     "test": "react-scripts test"
   },
   "eslintConfig": {
