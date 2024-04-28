@@ -13,7 +13,7 @@ const nodes = [
   {
     id: 1,
     label: "Freezing fog",
-    modifiers {
+    modifiers: {
       Vision: "Getting lost and surprised by encounters more likely",
       Exhaustion: "STR save to avoid fatigue",
     },
@@ -52,7 +52,7 @@ const nodes = [
   {
     id: 3,
     label: "Freezing fog",
-    modifiers {
+    modifiers: {
       Vision: "Getting lost and surprised by encounters more likely",
       Exhaustion: "STR save to avoid fatigue",
     },

@@ -173,7 +173,7 @@ const nodes = [
       backgroundColor: "#eabcd5",
       icon: "day",
     },
-    modifiers {
+    modifiers: {
       Exhaustion: "STR save to avoid fatigue",
       Slow: "Travel is slower.",
     },

@@ -186,7 +186,7 @@ const nodes = [
       backgroundColor: "#eabcd5",
       icon: "day",
     },
-    modifiers {
+    modifiers: {
       Vision: "Getting lost and surprised by encounters more likely",
       Wet: "Fires are harder to start.",
     },
