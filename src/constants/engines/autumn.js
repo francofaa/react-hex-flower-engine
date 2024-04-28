@@ -15,7 +15,7 @@ const nodes = [
     label: "Clear, chilly",
     style: {
       backgroundColor: "#ddddde",
-      icon: "day",
+      // icon: "day",
     },
     map: {
       up: 5,
@@ -31,7 +31,7 @@ const nodes = [
     label: "Partly cloudy, balmy",
     style: {
       backgroundColor: "#ddddde",
-      icon: "day-cloudy-windy",
+      // icon: "day-cloudy-windy",
     },
     map: {
       up: 7,
@@ -47,7 +47,7 @@ const nodes = [
     label: "Partly cloudy, chilly",
     style: {
       backgroundColor: "#ddddde",
-      icon: "day-partly-cloudy",
+      // icon: "day-partly-cloudy",
     },
     map: {
       up: 8,
@@ -66,7 +66,7 @@ const nodes = [
     },
     style: {
       backgroundColor: "#ddddde",
-      icon: "day-cloudy",
+      // icon: "day-cloudy",
     },
     map: {
       up: 10,
@@ -85,7 +85,7 @@ const nodes = [
     },
     style: {
       backgroundColor: "#ddddde",
-      icon: "cloudy-and-windy",
+      // icon: "cloudy-and-windy",
     },
     map: {
       up: 9,
@@ -101,7 +101,7 @@ const nodes = [
     label: "Windy, gusting",
     style: {
       backgroundColor: "#ddddde",
-      icon: "wind",
+      // icon: "wind",
     },
     map: {
       up: 12,
@@ -117,7 +117,7 @@ const nodes = [
     label: "Cloudy, misty",
     style: {
       backgroundColor: "#ddddde",
-      icon: "day-cloudy-foggy",
+      // icon: "day-cloudy-foggy",
     },
     modifiers: {
       Vision: "Getting lost and surprised by encounters more likely",
@@ -136,7 +136,7 @@ const nodes = [
     label: "Heavy clouds",
     style: {
       backgroundColor: "#ddddde",
-      icon: "cloudy",
+      // icon: "cloudy",
     },
     map: {
       up: 13,
@@ -152,7 +152,7 @@ const nodes = [
     label: "No Change in Weather",
     style: {
       backgroundColor: "#7777ff",
-      icon: "arrow-loading",
+      // icon: "arrow-loading",
     },
     map: {
       up: 15,
@@ -169,7 +169,7 @@ const nodes = [
     label: "Brooding clouds",
     style: {
       backgroundColor: "#eabcd5",
-      icon: "day",
+      // icon: "day",
     },
     map: {
       up: 17,
@@ -185,7 +185,7 @@ const nodes = [
     label: "Rolling fog",
     style: {
       backgroundColor: "#eabcd5",
-      icon: "day",
+      // icon: "day",
     },
     modifiers: {
       Slow: "Travel is slower.",
@@ -205,7 +205,7 @@ const nodes = [
     label: "Rolling fog",
     style: {
       backgroundColor: "#eabcd5",
-      icon: "day",
+      // icon: "day",
     },
     modifiers: {
       Slow: "Travel is slower.",
@@ -232,7 +232,7 @@ const nodes = [
     },
     style: {
       backgroundColor: "#77bc77",
-      icon: "rain",
+      // icon: "rain",
     },
     map: {
       up: 18,
@@ -251,7 +251,7 @@ const nodes = [
     },
     style: {
       backgroundColor: "#77bc77",
-      icon: "day-thunderstorms",
+      // icon: "day-thunderstorms",
     },
     map: {
       up: 16,
@@ -272,7 +272,7 @@ const nodes = [
     },
     style: {
       backgroundColor: "#77bc77",
-      icon: "thunderstorms",
+      // icon: "thunderstorms",
     },
     map: {
       up: 6,
@@ -295,7 +295,7 @@ const nodes = [
     },
     style: {
       backgroundColor: "#ffcf77",
-      icon: "thundershowers",
+      // icon: "thundershowers",
     },
     map: {
       up: 19,
@@ -317,7 +317,7 @@ const nodes = [
     },
     style: {
       backgroundColor: "#ffcf77",
-      icon: "thundershowers",
+      // icon: "thundershowers",
     },
     map: {
       up: 2,
@@ -339,7 +339,7 @@ const nodes = [
     },
     style: {
       backgroundColor: "#ffcf77",
-      icon: "thundershowers",
+      // icon: "thundershowers",
     },
     map: {
       up: 3,
@@ -361,7 +361,7 @@ const nodes = [
     },
     style: {
       backgroundColor: "#ff7777",
-      icon: "tornado",
+      // icon: "tornado",
     },
     map: {
       up: 19,

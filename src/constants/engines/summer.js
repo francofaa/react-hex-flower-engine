@@ -15,7 +15,7 @@ const nodes = [
     label: "Hot, humid",
     style: {
       backgroundColor: "#ddddde",
-      icon: "day",
+      // icon: "day",
     },
     map: {
       up: 5,
@@ -31,7 +31,7 @@ const nodes = [
     label: "Balmy, clear",
     style: {
       backgroundColor: "#ddddde",
-      icon: "day-cloudy-windy",
+      // icon: "day-cloudy-windy",
     },
     map: {
       up: 7,
@@ -47,7 +47,7 @@ const nodes = [
     label: "Overcast, muggy",
     style: {
       backgroundColor: "#ddddde",
-      icon: "day-partly-cloudy",
+      // icon: "day-partly-cloudy",
     },
     map: {
       up: 8,
@@ -63,7 +63,7 @@ const nodes = [
     label: "Hot, humid",
     style: {
       backgroundColor: "#ddddde",
-      icon: "day-cloudy",
+      // icon: "day-cloudy",
     },
     map: {
       up: 10,
@@ -79,7 +79,7 @@ const nodes = [
     label: "Warm, clear",
     style: {
       backgroundColor: "#ddddde",
-      icon: "cloudy-and-windy",
+      // icon: "cloudy-and-windy",
     },
     map: {
       up: 9,
@@ -95,7 +95,7 @@ const nodes = [
     label: "Overcast, muggy",
     style: {
       backgroundColor: "#ddddde",
-      icon: "wind",
+      // icon: "wind",
     },
     map: {
       up: 12,
@@ -111,7 +111,7 @@ const nodes = [
     label: "Brooding thunder",
     style: {
       backgroundColor: "#ddddde",
-      icon: "day-cloudy-foggy",
+      // icon: "day-cloudy-foggy",
     },
     map: {
       up: 11,
@@ -127,7 +127,7 @@ const nodes = [
     label: "Heavy clouds",
     style: {
       backgroundColor: "#ddddde",
-      icon: "cloudy",
+      // icon: "cloudy",
     },
     map: {
       up: 13,
@@ -143,7 +143,7 @@ const nodes = [
     label: "No Change in Weather",
     style: {
       backgroundColor: "#7777ff",
-      icon: "arrow-loading",
+      // icon: "arrow-loading",
     },
     map: {
       up: 15,
@@ -160,7 +160,7 @@ const nodes = [
     label: "Relentless heat, still",
     style: {
       backgroundColor: "#eabcd5",
-      icon: "day",
+      // icon: "day",
     },
     modifiers: {
       Armor: "Resting in heavy armor leaves you deprived.",
@@ -179,7 +179,7 @@ const nodes = [
     label: "Hot, occasional breezes",
     style: {
       backgroundColor: "#eabcd5",
-      icon: "day",
+      // icon: "day",
     },
     modifiers: {
       Armor: "Resting in heavy armor leaves you deprived.",
@@ -198,7 +198,7 @@ const nodes = [
     label: "Warm wind",
     style: {
       backgroundColor: "#eabcd5",
-      icon: "day",
+      // icon: "day",
     },
     map: {
       up: 4,
@@ -219,7 +219,7 @@ const nodes = [
     },
     style: {
       backgroundColor: "#77bc77",
-      icon: "rain",
+      // icon: "rain",
     },
     map: {
       up: 18,
@@ -238,7 +238,7 @@ const nodes = [
     },
     style: {
       backgroundColor: "#77bc77",
-      icon: "day-thunderstorms",
+      // icon: "day-thunderstorms",
     },
     map: {
       up: 16,
@@ -254,7 +254,7 @@ const nodes = [
     label: "Thunderstorm",
     style: {
       backgroundColor: "#77bc77",
-      icon: "thunderstorms",
+      // icon: "thunderstorms",
     },
     modifiers: {
       Vision: "Getting lost and surprised by encounters more likely",
@@ -276,7 +276,7 @@ const nodes = [
     label: "Sweltering, still",
     style: {
       backgroundColor: "#eabcd5",
-      icon: "day",
+      // icon: "day",
     },
     modifiers: {
       Armor: "Resting in heavy armor leaves you deprived.",
@@ -296,7 +296,7 @@ const nodes = [
     label: "Baking, dry",
     style: {
       backgroundColor: "#eabcd5",
-      icon: "day",
+      // icon: "day",
     },
     modifiers: {
       Armor: "Resting in heavy armor leaves you deprived.",
@@ -316,7 +316,7 @@ const nodes = [
     label: "Baking, dry",
     style: {
       backgroundColor: "#eabcd5",
-      icon: "day",
+      // icon: "day",
     },
     modifiers: {
       Armor: "Resting in heavy armor leaves you deprived.",
@@ -343,7 +343,7 @@ const nodes = [
     },
     style: {
       backgroundColor: "#ff7777",
-      icon: "tornado",
+      // icon: "tornado",
     },
     map: {
       up: 19,
