@@ -17,11 +17,11 @@
     "yarn": "^1.22.21"
   },
   "scripts": {
-    "build": "react-scripts build",
+    "build": "NODE_OPTIONS='--openssl-legacy-provider' react-scripts build",
     "deploy": "gh-pages -d build",
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
-    "start": "react scripts start",
+    "start": "react scripts",
     "test": "react-scripts test"
   },
   "eslintConfig": {
