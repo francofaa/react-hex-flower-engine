@@ -14,7 +14,7 @@ const nodes = [
     id: 1,
     label: "Thick, hot fog",
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
+      Vision: "Getting lost and surprised by encounters more likely. -1 navigation, on guard.",
     },
     style: {
       backgroundColor: "#ddddde",
@@ -33,7 +33,7 @@ const nodes = [
     id: 2,
     label: "Thick, hot fog",
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
+      Vision: "Getting lost and surprised by encounters more likely. -1 navigation, on guard.",
     },
     style: {
       backgroundColor: "#ddddde",
@@ -52,7 +52,7 @@ const nodes = [
     id: 3,
     label: "Misty, seeping damp",
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
+      Vision: "Getting lost and surprised by encounters more likely. -1 navigation, on guard.",
       Wet: "Fires are harder to start.",
     },
     style: {
@@ -72,7 +72,7 @@ const nodes = [
     id: 5,
     label: "Misty, seeping damp",
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
+      Vision: "Getting lost and surprised by encounters more likely. -1 navigation, on guard.",
       Wet: "Fires are harder to start.",
     },
     style: {
@@ -92,7 +92,7 @@ const nodes = [
     id: 4,
     label: "Misty, seeping damp",
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
+      Vision: "Getting lost and surprised by encounters more likely. -1 navigation, on guard.",
       Wet: "Fires are harder to start.",
     },
     style: {
@@ -112,7 +112,7 @@ const nodes = [
     id: 7,
     label: "Balmy mist",
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
+      Vision: "Getting lost and surprised by encounters more likely. -1 navigation, on guard.",
     },
     map: {
       up: 12,
@@ -127,11 +127,8 @@ const nodes = [
     id: 6,
     label: "Misty, seeping damp",
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
+      Vision: "Getting lost and surprised by encounters more likely. -1 navigation, on guard.",
       Wet: "Fires are harder to start.",
-    },
-    modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
     },
     map: {
       up: 11,
@@ -146,7 +143,7 @@ const nodes = [
     id: 8,
     label: "Misty, seeping damp",
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
+      Vision: "Getting lost and surprised by encounters more likely. -1 navigation, on guard.",
       Wet: "Fires are harder to start.",
     },
     style: {
@@ -187,7 +184,7 @@ const nodes = [
       // icon: "day",
     },
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
+      Vision: "Getting lost and surprised by encounters more likely. -1 navigation, on guard.",
       Wet: "Fires are harder to start.",
     },
     map: {
@@ -258,8 +255,7 @@ const nodes = [
     id: 11,
     label: "Befuddling green fog",
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
-      Confusion: "CTRL save to avoid getting lost",
+      Vision: "Getting lost and surprised by encounters more likely. -2 navigation, on guard.",
     },
     style: {
       backgroundColor: "#77bc77",
@@ -278,8 +274,7 @@ const nodes = [
     id: 16,
     label: "Befuddling green fog",
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
-      Confusion: "CTRL save to avoid getting lost",
+      Vision: "Getting lost and surprised by encounters more likely. -1 navigation, on guard.",
     },
     style: {
       backgroundColor: "#77bc77",
@@ -299,7 +294,7 @@ const nodes = [
     id: 15,
     label: "Torrential rain.",
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
+      Vision: "Getting lost and surprised by encounters more likely. -1 navigation, on guard.",
       Wet: "Fires are harder to start.",
     },
     style: {
@@ -319,7 +314,7 @@ const nodes = [
     id: 17,
     label: "Torrential rain.",
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
+      Vision: "Getting lost and surprised by encounters more likely. -1 navigation, on guard.",
       Wet: "Fires are harder to start.",
     },
     style: {
@@ -339,7 +334,7 @@ const nodes = [
     id: 18,
     label: "Torrential rain.",
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
+      Vision: "Getting lost and surprised by encounters more likely. -1 navigation, on guard.",
       Wet: "Fires are harder to start.",
     },
     style: {
@@ -359,7 +354,7 @@ const nodes = [
     id: 19,
     label: "Sleepy, purple mist.",
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
+      Vision: "Getting lost and surprised by encounters more likely. -1 navigation, on guard.",
       Sleep: "CTRL save to avoid magical sleep",
     },
     style: {

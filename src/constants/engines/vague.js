@@ -14,8 +14,8 @@ const nodes = [
     id: 1,
     label: "Freezing fog",
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
-      Exhaustion: "STR save to avoid fatigue",
+      Vision: "Getting lost and surprised by encounters more likely. -1 navigation, on guard.",
+      Exhaustion: "+1 watch or +1 Fatigue.",
     },
     style: {
       backgroundColor: "#ddddde",
@@ -34,7 +34,7 @@ const nodes = [
     id: 2,
     label: "Thick, rolling fog",
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
+      Vision: "Getting lost and surprised by encounters more likely. -1 navigation, on guard.",
     },
     style: {
       backgroundColor: "#ddddde",
@@ -53,8 +53,8 @@ const nodes = [
     id: 3,
     label: "Freezing fog",
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
-      Exhaustion: "STR save to avoid fatigue",
+      Vision: "Getting lost and surprised by encounters more likely. -1 navigation, on guard.",
+      Exhaustion: "+1 watch or +1 Fatigue.",
     },
     map: {
       up: 8,
@@ -69,7 +69,7 @@ const nodes = [
     id: 5,
     label: "Chill mist, winds wail",
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
+      Vision: "Getting lost and surprised by encounters more likely. -1 navigation, on guard.",
     },
     style: {
       backgroundColor: "#ddddde",
@@ -88,7 +88,7 @@ const nodes = [
     id: 4,
     label: "Sickly yellow mist",
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
+      Vision: "Getting lost and surprised by encounters more likely. -1 navigation, on guard.",
     },
     style: {
       backgroundColor: "#ddddde",
@@ -107,7 +107,7 @@ const nodes = [
     id: 7,
     label: "Icy mist, eerie howling",
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
+      Vision: "Getting lost and surprised by encounters more likely. -1 navigation, on guard.",
     },
     style: {
       backgroundColor: "#ddddde",
@@ -126,14 +126,11 @@ const nodes = [
     id: 6,
     label: "Icy mist, eerie howling",
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
+      Vision: "Getting lost and surprised by encounters more likely. -1 navigation, on guard.",
     },
     style: {
       backgroundColor: "#ddddde",
       // icon: "day-cloudy-foggy",
-    },
-    modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
     },
     map: {
       up: 11,
@@ -148,7 +145,7 @@ const nodes = [
     id: 8,
     label: "Sickly yellow mist",
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
+      Vision: "Getting lost and surprised by encounters more likely. -1 navigation, on guard.",
     },
     style: {
       backgroundColor: "#ddddde",
@@ -183,6 +180,9 @@ const nodes = [
   {
     id: 12,
     label: "Low mist, writhing soil",
+    modifiers: {
+      Terrain: "+1 watch, difficult terrain",
+    },
     style: {
       backgroundColor: "#eabcd5",
       // icon: "day",
@@ -199,6 +199,9 @@ const nodes = [
   {
     id: 9,
     label: "Low mist, writhing soil",
+    modifiers: {
+      Terrain: "+1 watch, difficult terrain",
+    },
     style: {
       backgroundColor: "#eabcd5",
       // icon: "day",
@@ -216,7 +219,7 @@ const nodes = [
     id: 14,
     label: "Steady snow, icy mist",
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
+      Vision: "Getting lost and surprised by encounters more likely. -1 navigation, on guard.",
       Wet: "Fires are harder to start.",
     },
     style: {
@@ -237,8 +240,7 @@ const nodes = [
     id: 13,
     label: "Steady snow; icy mist.",
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
-      Slow: "Travel is slower.",
+      Vision: "Getting lost and surprised by encounters more likely. -1 navigation, on guard.",
       Wet: "Fires are harder to start.",
     },
     style: {
@@ -258,9 +260,8 @@ const nodes = [
     id: 11,
     label: "Hoarfrost, freezing fog.",
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
-      Slow: "Travel is slower.",
-      Hazard: "Travel is dangerous.",
+      Vision: "Getting lost and surprised by encounters more likely. -1 navigation, on guard.",
+      Hazard: "Travel is dangerous. +1 watch or +1 Fatigue. +1 watch from terrain difficulty.",
     },
     style: {
       backgroundColor: "#77bc77",
@@ -279,7 +280,7 @@ const nodes = [
     id: 16,
     label: "Violet mist rises",
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
+      Vision: "Getting lost and surprised by encounters more likely. -1 navigation, on guard.",
     },
     style: {
       backgroundColor: "#77bc77",
@@ -300,11 +301,8 @@ const nodes = [
     label:
       "Blizzard, dense fog",
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
-      Slow: "Travel is slower.",
+      Hazard: "Travel is not possible.",
       Wet: "Fires are harder to start.",
-      Hazard: "Travel is dangerous.",
-      Exhaustion: "STR save to avoid fatigue",
     },
     style: {
       backgroundColor: "#ffcf77",
@@ -324,11 +322,8 @@ const nodes = [
     label:
       "Blizzard, dense violet fog",
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
-      Slow: "Travel is slower.",
+      Hazard: "Travel is not possible.",
       Wet: "Fires are harder to start.",
-      Hazard: "Travel is dangerous.",
-      Exhaustion: "STR save to avoid fatigue",
     },
     style: {
       backgroundColor: "#ffcf77",
@@ -348,11 +343,8 @@ const nodes = [
     label:
       "Blizzard, dense violet fog",
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
-      Slow: "Travel is slower.",
+      Hazard: "Travel is not possible.",
       Wet: "Fires are harder to start.",
-      Hazard: "Travel is dangerous.",
-      Exhaustion: "STR save to avoid fatigue",
     },
     style: {
       backgroundColor: "#ffcf77",
@@ -372,11 +364,8 @@ const nodes = [
     label:
       "Blizzard, earth tremors",
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
-      Slow: "Travel is slower.",
+      Hazard: "Travel is not possible.",
       Wet: "Fires are harder to start.",
-      Hazard: "Travel is dangerous.",
-      Exhaustion: "STR save to avoid fatigue",
     },
     style: {
       backgroundColor: "#ff7777",

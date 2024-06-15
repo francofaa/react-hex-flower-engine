@@ -257,9 +257,9 @@ const nodes = [
       // icon: "thunderstorms",
     },
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
+      Vision: "Getting lost and surprised by encounters more likely. -1 navigation, on guard.",
       Wet: "Fires are harder to start.",
-      Hazard: "Travel is dangerous.",
+      Hazard: "Travel is dangerous. +1 watch or +1 Fatigue. +1 watch from terrain difficulty.",
     },
     map: {
       up: 6,
@@ -280,7 +280,7 @@ const nodes = [
     },
     modifiers: {
       Armor: "Resting in heavy armor leaves you deprived.",
-      Exhaustion: "STR save to avoid fatigue",
+      Exhaustion: "+1 watch or +1 Fatigue.",
     },
     map: {
       up: 19,
@@ -300,7 +300,7 @@ const nodes = [
     },
     modifiers: {
       Armor: "Resting in heavy armor leaves you deprived.",
-      Exhaustion: "STR save to avoid fatigue",
+      Exhaustion: "+1 watch or +1 Fatigue.",
     },
     map: {
       up: 2,
@@ -320,7 +320,7 @@ const nodes = [
     },
     modifiers: {
       Armor: "Resting in heavy armor leaves you deprived.",
-      Exhaustion: "STR save to avoid fatigue",
+      Exhaustion: "+1 watch or +1 Fatigue.",
     },
     map: {
       up: 3,
@@ -337,9 +337,8 @@ const nodes = [
       "Forest fire, smoke",
     modifiers: {
       Vision: "Getting lost and surprised by encounters more likely",
-      Hazard: "Travel is dangerous.",
+      Hazard: "Travel is dangerous. +1 watch or +1 Fatigue. +1 watch from terrain difficulty.",
       Armor: "Resting in heavy armor leaves you deprived.",
-      Exhaustion: "STR save to avoid fatigue",
     },
     style: {
       backgroundColor: "#ff7777",

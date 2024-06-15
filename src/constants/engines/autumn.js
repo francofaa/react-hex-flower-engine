@@ -120,7 +120,7 @@ const nodes = [
       // icon: "day-cloudy-foggy",
     },
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
+      Vision: "Getting lost and surprised by encounters more likely. -1 navigation, on guard.",
     },
     map: {
       up: 11,
@@ -188,8 +188,7 @@ const nodes = [
       // icon: "day",
     },
     modifiers: {
-      Slow: "Travel is slower.",
-      Vision: "Getting lost and surprised by encounters more likely",
+      Vision: "Getting lost and surprised by encounters more likely. -1 navigation, on guard.",
     },
     map: {
       up: 14,
@@ -208,8 +207,7 @@ const nodes = [
       // icon: "day",
     },
     modifiers: {
-      Slow: "Travel is slower.",
-      Vision: "Getting lost and surprised by encounters more likely",
+      Vision: "Getting lost and surprised by encounters more likely. -1 navigation, on guard.",
     },
     map: {
       up: 4,
@@ -225,9 +223,8 @@ const nodes = [
     id: 13,
     label: "Heavy constant rain; reduced visibility.",
     modifiers: {
-      Exhaustion: "STR save to avoid fatigue",
-      Vision: "Getting lost and surprised by encounters more likely",
-      Slow: "Travel is slower.",
+      Hazard: "Travel is dangerous. +1 watch or +1 Fatigue. +1 watch from terrain difficulty.",
+      Vision: "Getting lost and surprised by encounters more likely. -1 navigation, on guard.",
       Wet: "Fires are harder to start.",
     },
     style: {
@@ -266,8 +263,8 @@ const nodes = [
     id: 16,
     label: "Whipping rains, thunderstorms",
     modifiers: {
-      Slow: "Travel is slower.",
-      Vision: "Getting lost and surprised by encounters more likely",
+      Hazard: "Travel is dangerous. +1 watch or +1 Fatigue. +1 watch from terrain difficulty.",
+      Vision: "Getting lost and surprised by encounters more likely. -1 navigation, on guard.",
       Wet: "Fires are harder to start.",
     },
     style: {
@@ -289,9 +286,9 @@ const nodes = [
     label:
       "Torrential storm",
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
+      Hazard: "Travel is dangerous. +1 watch or +1 Fatigue. +1 watch from terrain difficulty.",
+      Vision: "Getting lost and surprised by encounters more likely. -1 navigation, on guard.",
       Wet: "Fires are harder to start.",
-      Hazard: "Travel is dangerous.",
     },
     style: {
       backgroundColor: "#ffcf77",
@@ -311,9 +308,9 @@ const nodes = [
     label:
       "Torrential storm",
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
+      Hazard: "Travel is dangerous. +1 watch or +1 Fatigue. +1 watch from terrain difficulty.",
+      Vision: "Getting lost and surprised by encounters more likely. -1 navigation, on guard.",
       Wet: "Fires are harder to start.",
-      Hazard: "Travel is dangerous.",
     },
     style: {
       backgroundColor: "#ffcf77",
@@ -333,9 +330,9 @@ const nodes = [
     label:
       "Torrential storm",
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
+      Hazard: "Travel is dangerous. +1 watch or +1 Fatigue. +1 watch from terrain difficulty.",
+      Vision: "Getting lost and surprised by encounters more likely. -1 navigation, on guard.",
       Wet: "Fires are harder to start.",
-      Hazard: "Travel is dangerous.",
     },
     style: {
       backgroundColor: "#ffcf77",
@@ -355,9 +352,9 @@ const nodes = [
     label:
       "Tornado!",
     modifiers: {
-      Vision: "Getting lost and surprised by encounters more likely",
+      Hazard: "Travel is dangerous. +1 watch AND +1 Fatigue. +1 watch from terrain difficulty.",
+      Vision: "Getting lost and surprised by encounters more likely. -1 navigation, on guard.",
       Wet: "Fires are harder to start.",
-      Hazard: "Travel is dangerous.",
     },
     style: {
       backgroundColor: "#ff7777",
